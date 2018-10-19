@@ -44,7 +44,12 @@ public class TranslateEV {
         this.dataPath = dataPath;
     }
     public TranslateEV(){}
-    public void englishToVietnameseOn(String key1) {
+    public void englishToVietnameseOn(String keySearch) {
+        if(map.get(keySearch) != null) {
+            this.founded = true;
+            System.out.println("thuc hien bo qua truy cap data");
+            return;
+        }
         EtoVn getValue = new EtoVn(dataPath);
         try {
             BufferedReader reader = new BufferedReader(new FileReader(filePath));
@@ -53,22 +58,22 @@ public class TranslateEV {
                 // put to map
                 String key = "";
                 String value;
-
                 // count amount of word
                 int amount = countWorldInIndexFile(line);
                 String[] parts = line.split("\t",amount);
-                getValue.setEtoVn(parts[amount - 2],parts[amount - 1]);
-                value = getValue.getWordMeaning();
+                if(parts[0].charAt(0) == keySearch.charAt(0)){
+                     getValue.setEtoVn(parts[amount - 2],parts[amount - 1]);
+                     value = getValue.getWordMeaning();
 
-                for(int i = 0;i < amount - 2;i++) {
-                    key = key + " " + parts[i];
-                }
-                key = key.trim();
-
-                if(key1.equals(key)) {
-                    map.put(key,value);
-                    this.founded = true;
-                    return;
+                     for(int i = 0;i < amount - 2;i++) {
+                         key = key + " " + parts[i];
+                      }
+                      key = key.trim();
+                      if(keySearch.equals(key)) {
+                          map.put(key,value);
+                           this.founded = true;
+                          return;
+                      }
                 }
             }
             reader.close();

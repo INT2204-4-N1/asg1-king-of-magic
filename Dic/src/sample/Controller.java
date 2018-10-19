@@ -1,13 +1,19 @@
 package sample;
 
+import application.TextToSpeech;
 import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
+import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseEvent;
 import sample.EV.TranslateEV;
 
 import java.awt.*;
+import java.awt.image.ImageObserver;
+import java.awt.image.ImageProducer;
 
 public class Controller {
 
@@ -31,6 +37,15 @@ public class Controller {
         }
         textArea.setWrapText(true);
         textArea.setStyle("-fx-font-size: 15");
+
+        Speaker.addEventHandler(MouseEvent.MOUSE_CLICKED, event -> {
+            System.out.println("Speaker pressed ");
+            TextToSpeech test = new TextToSpeech();
+            test.speak(textField.getText(),1.0f,true,false);
+
+            event.consume();
+        });
+
     }
 
     @FXML
@@ -42,11 +57,17 @@ public class Controller {
         textArea.clear();
         if(test.founded == false) {
             textArea.setStyle("-fx-font-size: 30");
-            textArea.setText("No value.");
+            if(cbEtoV.isSelected()){
+                textArea.setText("\nNo value.\nOr changes kind of translate.");
+            } else {
+                textArea.setText("Không có dữ liệu.\nHoặc hãy chuyển đổi kiểu dịch.");
+            }
         } else {
             textArea.setStyle("-fx-font-size: 15");
-            textArea.setText(test.map.get(textField.getText()));
+            textArea.setText("\n\n" + test.map.get(textField.getText()));
         }
+
+
     }
 
     @FXML
@@ -65,4 +86,20 @@ public class Controller {
     }
     @FXML
     private TextArea textArea;
+
+    @FXML
+    public void onEnter(ActionEvent ae){
+        searchButton(ae);
+    }
+
+    @FXML
+    private ImageView Speaker;
+
+
+
+
+
+
+
+
 }
