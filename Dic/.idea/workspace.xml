@@ -29,6 +29,11 @@
       <change afterPath="$PROJECT_DIR$/src/test/dicEV.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/test/test.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/test/testCharToString.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Maven/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Maven/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Maven/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Maven/maven.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Maven/pom.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Speecj/.idea/libraries/guava_22_0.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Speecj/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Speecj/libraries/guava-22.0.jar" afterDir="false" />
@@ -107,16 +112,16 @@
     <session id="2102848370">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="35" />
+          <entry key="project.closed" value="37" />
           <entry key="project.open.time.0" value="11" />
-          <entry key="project.open.time.1" value="16" />
+          <entry key="project.open.time.1" value="17" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.14" value="2" />
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.8" value="2" />
-          <entry key="project.open.time.9" value="2" />
-          <entry key="project.opened" value="36" />
+          <entry key="project.open.time.9" value="3" />
+          <entry key="project.opened" value="38" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -174,8 +179,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/sample/EV/EtoVn.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="676">
-              <caret line="43" column="19" selection-start-line="43" selection-start-column="19" selection-end-line="43" selection-end-column="19" />
+            <state relative-caret-position="425">
+              <caret line="42" column="5" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
               <folding>
                 <element signature="method#setEtoVn#0;class#EtoVn#0" />
                 <element signature="method#convertToDecimal#0;class#EtoVn#0" />
@@ -188,7 +193,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/EV/TranslateEV.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="799">
+            <state relative-caret-position="2028">
               <caret line="105" column="37" selection-start-line="105" selection-start-column="37" selection-end-line="105" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -204,7 +209,7 @@
         <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="390">
-              <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+              <caret line="31" selection-start-line="31" selection-end-line="31" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#start#0;class#Main#0" />
@@ -216,7 +221,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="530">
+            <state relative-caret-position="650">
               <caret line="89" selection-start-line="89" selection-end-line="89" />
               <folding>
                 <element signature="method#initialize#0;class#Controller#0" />
@@ -346,7 +351,7 @@
     <property name="OverrideImplement.combined" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540128984135" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540130948722" />
     <property name="dynamic.classpath" value="false" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -566,6 +571,8 @@
       <workItem from="1539952575069" duration="1014000" />
       <workItem from="1539962367378" duration="357000" />
       <workItem from="1540103386116" duration="2180000" />
+      <workItem from="1540128863430" duration="464000" />
+      <workItem from="1540130940455" duration="25000" />
     </task>
     <task id="LOCAL-00001" summary="add data base">
       <created>1539410384542</created>
@@ -578,13 +585,12 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77443000" />
+    <option name="totallyTimeSpent" value="77932000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="876" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.2267525" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.23247497" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" />
       <window_info id="Designer" order="3" />
@@ -593,7 +599,7 @@
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.0" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32908162" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39923468" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -761,33 +767,21 @@
       </provider>
       <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
+    <entry file="file://$PROJECT_DIR$/src/sample/EV/EtoVn.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="530">
-          <caret line="89" selection-start-line="89" selection-end-line="89" />
+        <state relative-caret-position="425">
+          <caret line="42" column="5" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
           <folding>
-            <element signature="method#initialize#0;class#Controller#0" />
-            <element signature="method#searchButton#0;class#Controller#0" />
-            <element signature="method#checkEventEtoV#0;class#Controller#0" />
-            <element signature="method#checkEventVtoE#0;class#Controller#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#start#0;class#Main#0" />
+            <element signature="method#setEtoVn#0;class#EtoVn#0" />
+            <element signature="method#convertToDecimal#0;class#EtoVn#0" />
+            <element signature="method#getWordMeaning#0;class#EtoVn#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/EV/TranslateEV.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="799">
+        <state relative-caret-position="2028">
           <caret line="105" column="37" selection-start-line="105" selection-start-column="37" selection-end-line="105" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -798,14 +792,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/EV/EtoVn.java">
+    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="676">
-          <caret line="43" column="19" selection-start-line="43" selection-start-column="19" selection-end-line="43" selection-end-column="19" />
+        <state relative-caret-position="390">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
           <folding>
-            <element signature="method#setEtoVn#0;class#EtoVn#0" />
-            <element signature="method#convertToDecimal#0;class#EtoVn#0" />
-            <element signature="method#getWordMeaning#0;class#EtoVn#0" />
+            <element signature="imports" expanded="true" />
+            <element signature="method#start#0;class#Main#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="650">
+          <caret line="89" selection-start-line="89" selection-end-line="89" />
+          <folding>
+            <element signature="method#initialize#0;class#Controller#0" />
+            <element signature="method#searchButton#0;class#Controller#0" />
+            <element signature="method#checkEventEtoV#0;class#Controller#0" />
+            <element signature="method#checkEventVtoE#0;class#Controller#0" />
           </folding>
         </state>
       </provider>
