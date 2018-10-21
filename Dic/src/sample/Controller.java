@@ -36,23 +36,26 @@ public class Controller {
             test = new TranslateEV(filePathVtoE,dataPathVtoE);
         }
         textArea.setWrapText(true);
-        textArea.setStyle("-fx-font-size: 15");
+        textArea.setStyle("-fx-font-size: 20");
 
         Speaker.addEventHandler(MouseEvent.MOUSE_CLICKED, event -> {
             System.out.println("Speaker pressed ");
             TextToSpeech test = new TextToSpeech();
-            test.speak(textField.getText(),1.0f,true,false);
+
+            test.speak(textField.getText(),1.0f,false,false);
 
             event.consume();
         });
 
     }
 
+
     @FXML
     private TextField textField;
     public void searchButton(ActionEvent event) {
         String key = textField.getText();
         test.englishToVietnameseOn(key);
+
         System.out.println(test.map);
         textArea.clear();
         if(test.founded == false) {
@@ -60,11 +63,11 @@ public class Controller {
             if(cbEtoV.isSelected()){
                 textArea.setText("\nNo value.\nOr changes kind of translate.");
             } else {
-                textArea.setText("Không có dữ liệu.\nHoặc hãy chuyển đổi kiểu dịch.");
+                textArea.setText("\nKhông có dữ liệu.\nHoặc hãy chuyển đổi kiểu dịch.");
             }
         } else {
-            textArea.setStyle("-fx-font-size: 15");
-            textArea.setText("\n\n" + test.map.get(textField.getText()));
+            textArea.setStyle("-fx-font-size: 20");
+            textArea.setText("\n" + test.map.get(textField.getText()));
         }
 
 
@@ -84,6 +87,7 @@ public class Controller {
             test = new TranslateEV(filePathVtoE,dataPathVtoE);
         }
     }
+
     @FXML
     private TextArea textArea;
 

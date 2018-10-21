@@ -4,6 +4,13 @@ package sample.EV;
 import java.io.RandomAccessFile;
 
 public class EtoVn {
+    /**
+     * dataPath: duong dan cua file data.
+     * Slength: do dai cua tu trong file .dict, dang decimal 64bit
+     * Sposition: vi tri cua tu trong file .dict, dang decimal 64bit
+     *
+     */
+
     private  String dataPath = "";
     private  String Slength = "";
     private  String Sposition = "";
@@ -15,6 +22,10 @@ public class EtoVn {
     public EtoVn(String dataPath){
         this.dataPath = dataPath;
     }
+
+    /**
+     * chuyen dang decimal 64bit qua int
+     */
     public int convertToDecimal(String contents) {
         int result = 0;
         String Sixty_bit = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
@@ -28,6 +39,11 @@ public class EtoVn {
         }
         return result;
     }
+
+    /**
+     * Truy cap vao file theo dataPath, lay va tra ve du lieu
+     * @return
+     */
     public String getWordMeaning() {
         if(Slength != "" && Sposition != "") {
             int length = convertToDecimal(Slength);
